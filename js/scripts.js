@@ -2,6 +2,8 @@ $(function() {
 
   $("#codePicker").submit(function(event) {
 
+    event.preventDefault();
+
     var teaTimeInput = parseInt($(".teaTime").val());
     var valuableInput = parseInt($(".valuable").val());
     var weekendInput = parseInt($(".weekend").val());
@@ -10,22 +12,28 @@ $(function() {
 
     var inputResult = teaTimeInput + valuableInput + weekendInput + garbageInput + arguementInput;
 
-    console.log(inputResult);
-
-    if (inputResult < 6) {
-      console.log("swift");
-    } else if(inputResult < 11) {
-      //rust
-    } else if(inputResult < 16) {
-      //ruby
-    } else {
-      //go
-    }
 
 
-    $(".result").text();
+    $(".result").text(function(){
+      var name = $(".name").val();
+      $(".yourName").text(name + ",");
 
-    event.preventDefault();
+
+      if (inputResult < 6) {
+        $(".swift").show();
+        $(".rust, .ruby, .go").hide();
+      } else if (inputResult < 11) {
+        $(".rust").show();
+        $(".swift, .ruby, .go").hide();
+      } else if (inputResult < 16) {
+        $(".ruby").show();
+        $(".swift, .rust, .go").hide();
+      } else {
+        $(".go").show();
+        $(".swift, .rust, .ruby").hide();
+      }
+
+    });
 
   });
 });

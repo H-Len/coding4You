@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
     <meta charset="utf-8">
 
@@ -12,35 +12,35 @@
   </head>
   <body>
     <div class="container">
-      <h1>Find the programming language for you!
+      <h1>Find the programming language for you!</h1>
       <p><em>Be honest in your responses for the most accurate results.</em></p>
 
       <form id="codePicker" method="post">
         <div class="form-group">
 
           <label for="name">What is your name?</label>
-          <input class="name" type="text" name="name">
+          <input class="name" type="text">
 
           <ol>
             <li>If you go for tea, how do you know a friendship is going to last</li>
             <select class="teaTime" name="teaTime">
               <option value="1">same zodiac sign and programming language</option>
-              <option value="2">maintains boundaries (rust)</option>
-              <option value="3">you discuss a new startup to embark on (ruby)</option>
+              <option value="2">maintains boundaries</option>
+              <option value="3">you discuss a new startup to embark on</option>
               <option value="4">the friend buys biscuits to share</option>
             </select>
 
             <li>Which of the following holds the highest value to you</li>
             <select class="valuable" name="valuable">
               <option value="1">a good book</option>
-              <option value="2">safety (rust)</option>
-              <option value="3">something new! (ruby)</option>
-              <option value="4">readability (Go)</option>
+              <option value="2">safety</option>
+              <option value="3">something new!</option>
+              <option value="4">readability</option>
             </select>
 
             <li>You have the weekend off. You...</li>
             <select class="weekend" name="weekend">
-              <option value="1">fly somewhere (swift)</option>
+              <option value="1">fly somewhere</option>
               <option value="2">do chores</option>
               <option value="3">have the weekend off</option>
               <option value="4">clean all of your fine antiques</option>
@@ -51,21 +51,38 @@
               <option value="1">one less thing to do once it's done</option>
               <option value="2">not it!</option>
               <option value="3">there's a lot to study for coding...</option>
-              <option value="4">automated garbage collection system (go)</option>
+              <option value="4">automated garbage collection system</option>
             </select>
 
             <li>You were in an arguement yesterday and now you want to deal with...</li>
             <select class="arguement" name="arguement">
-              <option value="1">a snack, an apple sounds good (swift)</option>
+              <option value="1">a snack, an apple sounds good</option>
               <option value="2">nothing</option>
-              <option value="3">high-level...er, take the high road (ruby)</option>
-              <option value="4">error handling (Go)</option>
+              <option value="3">high-level...er, take the high road</option>
+              <option value="4">error handling</option>
             </select>
           </ol>
           <button id="button" type="submit" name="button">Submit!</button>
-          <div class="result"></div>
-      </form>
-
-    </div>
-  </body>
-</html>
+          <div class="yourName"></div>
+          <div class="result">
+            <div class="swift">
+              <p>your results are in!</p>
+              <img src="img/swift.png" alt="swift programming language logo">
+            </div>
+            <div class="rust">
+              <p>don't let the weathering in the name fool you.</p>
+              <img src="img/rust.png" alt="rust programming language logo">
+            </div>
+            <div class="ruby">
+              <p>aww, your a gem. Or at least the language for you is.</p>
+              <img src="img/ruby.png" alt="ruby programming language logo">
+            </div>
+            <div class="go">
+              <p>don't stop!</p>
+              <img src="img/go.png" alt="go programming language logo">
+            </div>
+          </div>
+        </form>
+      </div>
+    </body>
+  </html>
