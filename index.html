@@ -11,47 +11,56 @@
     <title>What's Your Language</title>
   </head>
   <body>
-    <h1>Find the programming language for you!</h1>
-    <p>Be honest in your responses for the most accurate results.</p>
+    <div class="container">
+      <h1>Find the programming language for you!</h1>
+      <p><em>Be honest in your responses for the most accurate results.</em></p>
 
-    what is your name
+      <!-- what is your name -->
 
-    if you go for tea, how do you know a friendship is going to last
-      same zodiac sign and programming language
-      maintains boundaries (rust)
-      you discuss a new startup to embark on (ruby)
-      the friend buys biscuits to share
+      <p>If you go for tea, how do you know a friendship is going to last</p>
+      <select class="teaTime" name="teaTime">
+        <option value="1">same zodiac sign and programming language</option>
+        <option value="2">maintains boundaries (rust)</option>
+        <option value="3">you discuss a new startup to embark on (ruby)</option>
+        <option value="4">the friend buys biscuits to share</option>
+      </select>
+
+      <p>which of the following holds the highest value to you</p>
+      <select class="valuable" name="valuable">
+        <option value="1">a good book</option>
+        <option value="2">safety (rust)</option>
+        <option value="3">something new! (ruby)</option>
+        <option value="4">readability (Go)</option>
+      </select>
+
+      <p>you have the weekend off. You...</p>
+      <select class="weekend" name="weekend">
+        <option value="1">fly somewhere (swift)</option>
+        <option value="2">do chores</option>
+        <option value="3">have the weekend off</option>
+        <option value="4">clean all of your fine antiques</option>
+      </select>
+
+      <p>garbage collection, someone's got to do it.</p>
+      <select class="garbage" name="garbage">
+        <option value="1">one less thing to do once it's done</option>
+        <option value="2">not it!</option>
+        <option value="3">there's a lot to study for coding...</option>
+        <option value="4">automated garbage collection system (go)</option>
+      </select>
 
 
-    which of the following is most important
-      a good book
-      safety (rust)
-      something new! (ruby)
-      readability (Go)
-
-    you have the weekend off. You...
-      fly somewhere (swift)
-      do chores
-      have the weekend off
-      clean all of your fine antiques
-
-    garbage collection, someone's got to do it.
-      one less thing to do once it's done
-      not it!
-
-      automated garbage collection system (go)
+      <p>you were in an arguement yesterday and now you want to deal with...</p>
+      <select class="arguement" name="arguement">
+        <option value="1">a snack, an apple sounds good (swift)</option>
+        <option value="2">nothing</option>
+        <option value="3">high-level...er, take the high road (ruby)</option>
+        <option value="4">error handling (Go)</option>
+      </select>
 
 
-    you were in an arguement yesterday and now you want to deal with...
-      a snack, an apple sounds good (swift)
-      nothing
-      high-level...er, take the high road (ruby)
-      error handling (Go)
-
-
-    <div class="result"></div>
+      <div class="result"></div>
 
     </div>
-
   </body>
 </html>
