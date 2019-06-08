@@ -1,16 +1,56 @@
+.container {
+  background-color: black;
+}
+
 body {
   color: lightblue;
-  background-image: url('../img/binaryCode.png');
+  background-image: url("../img/bg-code.jpeg");
 }
 
 h1 {
   margin: 25px;
 }
 
-.result {
+.yourName {
+  font-weight: 200;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.swift {
+  text-align: center;
+  color: white;
+  background-color: black;
+  border-radius: 50%;
   display: none;
   border: solid 5px black;
 }
+
+.rust {
+  text-align: center;
+  color: brown;
+  font-weight: bolder;
+  background-color: lightpink;
+  display: none;
+  border: solid 5px black;
+}
+
+.ruby {
+  text-align: center;
+  background-color: black;
+  border-radius: 50%;
+  display: none;
+  border: solid 5px black;
+}
+
+.go {
+  text-align: center;
+  background-color: black;
+  border-radius: 50%;
+  display: none;
+  border: solid 5px black;
+}
+
 
 select {
   margin-bottom: 10px;
