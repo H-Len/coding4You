@@ -1,15 +1,21 @@
-# Programming for You!
+# _Programming for You!_
 
-## By _Hannah Melendy, 2019_
+#### By _Hannah Melendy, 2019_
 
-### Description _Answering a series of question will lead to finding a programming language fit for them_
+## Description
+_user answers a series of questions to find a programming language fit_
 
-### _Set-up_
+## _Set-up_
+
 * clone repo
 * open app in browser
 
 _internet connection is required_
 
-### copyright information
+## Known Bugs
 
-open source (c) _**Hannah Melendy**_ 2019_
+_No known bugs. Please feel free to contact me if you run in to any issues, or if you have any questions or suggestions._
+
+### License
+
+open source (c) 2019 **_Hannah Melendy_**
