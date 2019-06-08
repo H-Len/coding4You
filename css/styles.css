@@ -1,5 +1,10 @@
 body {
-  background-color: lightgrey;
+  color: lightblue;
+  background-image: url('../img/binaryCode.png');
+}
+
+h1 {
+  margin: 25px;
 }
 
 .result {
