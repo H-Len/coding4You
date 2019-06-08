@@ -17,10 +17,14 @@ h1 {
   text-align: center;
 }
 
+img {
+  border-radius: 50%;
+}
+
 .swift {
   text-align: center;
-  color: white;
-  background-color: black;
+  color: darkorange;
+  background-color: lightblue;
   border-radius: 50%;
   display: none;
   border: solid 5px black;
@@ -37,15 +41,15 @@ h1 {
 
 .ruby {
   text-align: center;
-  background-color: black;
-  border-radius: 50%;
+  background-color: darkred;
   display: none;
   border: solid 5px black;
 }
 
 .go {
   text-align: center;
-  background-color: black;
+  color: black;
+  background-color: lime;
   border-radius: 50%;
   display: none;
   border: solid 5px black;
