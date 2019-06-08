@@ -1,8 +1,22 @@
+body {
+  background-color: lightgrey;
+}
+
 .result {
   display: none;
   border: solid 5px black;
 }
 
-p {
-  font-style: italic;
+select {
+  margin-bottom: 10px;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+#button {
+  margin: 15px;
+  border: dotted 5px black;
+  background-color: lightblue;
 }

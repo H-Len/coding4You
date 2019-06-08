@@ -15,49 +15,55 @@
       <h1>Find the programming language for you!</h1>
       <p><em>Be honest in your responses for the most accurate results.</em></p>
 
-      <!-- what is your name -->
+      <form id="codePicker" method="post">
 
-      <p>If you go for tea, how do you know a friendship is going to last</p>
-      <select class="teaTime" name="teaTime">
-        <option value="1">same zodiac sign and programming language</option>
-        <option value="2">maintains boundaries (rust)</option>
-        <option value="3">you discuss a new startup to embark on (ruby)</option>
-        <option value="4">the friend buys biscuits to share</option>
-      </select>
+        <label for="name">What is your name?</label>
+        <input class="name" type="text" name="name">
 
-      <p>which of the following holds the highest value to you</p>
-      <select class="valuable" name="valuable">
-        <option value="1">a good book</option>
-        <option value="2">safety (rust)</option>
-        <option value="3">something new! (ruby)</option>
-        <option value="4">readability (Go)</option>
-      </select>
+        <ol>
+          <li>If you go for tea, how do you know a friendship is going to last</li>
+          <select class="teaTime" name="teaTime">
+            <option value="1">same zodiac sign and programming language</option>
+            <option value="2">maintains boundaries (rust)</option>
+            <option value="3">you discuss a new startup to embark on (ruby)</option>
+            <option value="4">the friend buys biscuits to share</option>
+          </select>
 
-      <p>you have the weekend off. You...</p>
-      <select class="weekend" name="weekend">
-        <option value="1">fly somewhere (swift)</option>
-        <option value="2">do chores</option>
-        <option value="3">have the weekend off</option>
-        <option value="4">clean all of your fine antiques</option>
-      </select>
+          <li>Which of the following holds the highest value to you</li>
+          <select class="valuable" name="valuable">
+            <option value="1">a good book</option>
+            <option value="2">safety (rust)</option>
+            <option value="3">something new! (ruby)</option>
+            <option value="4">readability (Go)</option>
+          </select>
 
-      <p>garbage collection, someone's got to do it.</p>
-      <select class="garbage" name="garbage">
-        <option value="1">one less thing to do once it's done</option>
-        <option value="2">not it!</option>
-        <option value="3">there's a lot to study for coding...</option>
-        <option value="4">automated garbage collection system (go)</option>
-      </select>
+          <li>You have the weekend off. You...</li>
+          <select class="weekend" name="weekend">
+            <option value="1">fly somewhere (swift)</option>
+            <option value="2">do chores</option>
+            <option value="3">have the weekend off</option>
+            <option value="4">clean all of your fine antiques</option>
+          </select>
 
+          <li>Garbage collection, someone's got to do it.</li>
+          <select class="garbage" name="garbage">
+            <option value="1">one less thing to do once it's done</option>
+            <option value="2">not it!</option>
+            <option value="3">there's a lot to study for coding...</option>
+            <option value="4">automated garbage collection system (go)</option>
+          </select>
 
-      <p>you were in an arguement yesterday and now you want to deal with...</p>
-      <select class="arguement" name="arguement">
-        <option value="1">a snack, an apple sounds good (swift)</option>
-        <option value="2">nothing</option>
-        <option value="3">high-level...er, take the high road (ruby)</option>
-        <option value="4">error handling (Go)</option>
-      </select>
+          <li>You were in an arguement yesterday and now you want to deal with...</li>
+          <select class="arguement" name="arguement">
+            <option value="1">a snack, an apple sounds good (swift)</option>
+            <option value="2">nothing</option>
+            <option value="3">high-level...er, take the high road (ruby)</option>
+            <option value="4">error handling (Go)</option>
+          </select>
+        </ol>
+      </form>
 
+      <button id="button" type="submit" name="button">Submit!</button>
 
       <div class="result"></div>
 
